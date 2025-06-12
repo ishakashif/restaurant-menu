@@ -10,17 +10,13 @@
             display: block;
             margin: 0 auto;
         }
-        .center-block {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+
         .format-orders {
             margin: 0 auto;
             width: 1000px;
         }
         .pull-left-label {
-            margin-left: -40px;
+            margin-left: -30px;
         }
     </style>
 </head>
@@ -86,7 +82,7 @@
         <section id="order-form">
             <h2 class="center-text" style="color: burlywood;">Place your Order Now!</h2>
 
-            <div style="display: flex; justify-content: space-between; width: 1000px; margin: 0 auto;">
+            <div style="display: flex; justify-content: space-between; width: 600px; margin: 0 auto; padding: 0 50px;">
                 <h3 style="color: burlywood;">Quantity</h3>
                 <h3 style="color: burlywood;">Sides and Add Ons!</h3>
             </div>
@@ -95,32 +91,32 @@
                 <div class="format-orders">
 
                     <!-- Keema Biriyani Row -->
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
-                        <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; padding: 0 200px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
                             <label for="biriyani" class="pull-left-label">Keema Biriyani</label><br>
                             <input type="number" id="biriyani" name="food-order" min="0" max="10" />
                         </div>
-                        <div>
+                        <div style="text-align: left; width:150px;">
                             <label><input type="checkbox" name="biriyani-side" value="naan" /> Naan</label><br>
                             <label><input type="checkbox" name="biriyani-side" value="raita" /> Raita</label>
                         </div>
                     </div>
 
                     <!-- Shahi Paneer Row -->
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
-                        <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; padding: 0 200px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
                             <label for="paneer" class="pull-left-label">Shahi Paneer Korma</label><br>
                             <input type="number" id="paneer" name="food-order" min="0" max="10" />
                         </div>
-                        <div>
+                        <div style="text-align: left; width:150px;">
                             <label><input type="checkbox" name="paneer-side" value="extra-paneer" /> Extra Paneer</label><br>
                             <label><input type="checkbox" name="paneer-side" value="butter-naan" /> Butter Naan</label>
                         </div>
                     </div>
 
                     <!-- Kheer Dessert Row -->
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
-                        <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; padding: 0 200px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
                             <label for="kheer" class="pull-left-label">Kheer Dessert</label><br>
                             <input type="number" id="kheer" name="food-order" min="0" max="10" />
                         </div>
@@ -129,10 +125,22 @@
                             <label><input type="checkbox" name="kheer-side" value="pistachios" /> Chopped Pistachios</label>
                         </div>
                     </div>
-
+                </div>
+                <div>
+                    <h3 style="color:burlywood" class="center-text">Special Requests!</h3>
+                    <textarea rows="4" cols="50" name="message" id="message" style="display:block; margin: 0 auto;">Tell us how we can make your dining experience better! Are there any meals of yours we should make tweaks to?</textarea>
+                    <br>
+                </div>
+                <div style="text-align: center;">
+                    <input type="submit" value="Go to Checkout!">
                 </div>
             </form>
         </section>
     </main>
+    <footer>
+        <div class="center-text">
+            <p>Made with love by @ishakxo on CodéDex!</p>
+        </div>
+    </footer>
 </body>
 </html>
